@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card-group{
+            max-width: 1260px;
+            display: flex;
+            column-gap: 16px;
+            padding: 50px;
+            overflow-x: scroll;
+        }
+        .card{
+            flex: 0 0 300px;
+            display: flex;
+            flex-direction: column;
+            height: 300px;
+            background-color: aquamarine;
+            padding: 32px;
+            box-shadow: -16px 0 32px rgba(0, 0, 0,0.5);
+            border-radius: 8px;
+            transition: transform 250ms;
+        }
+        .div-img{
+            width: 30px;
+            height: 50px;
+            background-color: black;
+        }
+        .div-inpo{
+            display: flex;
+            justify-content: space-between;
+        }
+        .card:not(:first-child){
+            margin-left: -130px;
+        }
+        .card:hover{
+            transform: translate(-8px, -16px)
+            rotate(3deg);
+        }
+        .card:hover ~.card{
+            transform: translate(130px);
+        }
+    </style>
+
+</head>
+<body>
+<div class="card-group">
+    <article class="card">
+        <div class="div-inpo">
+            <div class="div-img"></div>
+            <h1>Lorem, ipsum dolor.</h1>
+        </div>
+        <div class="ati">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, laborum quam cum, ex culpa eligendi aliquid perferendis voluptate commodi harum pariatur temporibus reiciendis numquam aliquam laudantium saepe ducimus quaerat consequatur?
+        </div>
+    </article>
+    <article class="card">
+        <div class="div-inpo">
+            <div class="div-img"></div>
+            <h1>Lorem, ipsum dolor.</h1>
+        </div>
+        <div class="ati">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, laborum quam cum, ex culpa eligendi aliquid perferendis voluptate commodi harum pariatur temporibus reiciendis numquam aliquam laudantium saepe ducimus quaerat consequatur?
+        </div>
+    </article>
+    <article class="card">
+        <div class="div-inpo">
+            <div class="div-img"></div>
+            <h1>Lorem, ipsum dolor.</h1>
+        </div>
+        <div class="ati">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, laborum quam cum, ex culpa eligendi aliquid perferendis voluptate commodi harum pariatur temporibus reiciendis numquam aliquam laudantium saepe ducimus quaerat consequatur?
+        </div>
+    </article>
+    <article class="card">
+        <div class="div-inpo">
+            <div class="div-img"></div>
+            <h1>Lorem, ipsum dolor.</h1>
+        </div>
+        <div class="ati">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, laborum quam cum, ex culpa eligendi aliquid perferendis voluptate commodi harum pariatur temporibus reiciendis numquam aliquam laudantium saepe ducimus quaerat consequatur?
+        </div>
+    </article>
+
+</div>
+
+    
+</body>
+<script>
+
+</script>
+</html>
